@@ -1,0 +1,14 @@
+#fig-2 {
+  width: 100%;
+  margin: auto;}
+
+
+h3 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+#boards {
+    max-height: 500px;
+  }
