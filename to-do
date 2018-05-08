@@ -1,0 +1,84 @@
+# Single-Serving To-Dos
+
+18 to-dos, 5 points each, with 2 extra credit to-dos
+
+## Essential
+
+### Code
+`15 points`
+
+- [x] Use of lowercase alphabet for all markup, style, and file and folder names (also `class`, `id`, and file and folder names should not have spaces, instead use a hyphen `-` or an underscore `_` in place of a space). For example, `<section id="about">` instead of `<section id="About">`; `main.css` instead of `Main.CSS`
+- [x] Use of [Bootstrap](https://getbootstrap.com) for foundational styles (layout) and `main.css` for custom styles
+- [x] Use of a meaningful `title` and `meta` description
+  - For example: `<title>`Why we skip Photoshop`</title>`
+  - For example: `<meta name="description" content="When designing a UI we usually go right from a quick paper sketch to HTML/CSS. We skip the static Photoshop mockup. Here are a few reasons why we skip photoshop: You can’t click a Photoshop mockup. This is probably the number one reason we skip static mockups. They aren’t real. Pap…">`
+
+### Typography
+`15 points`
+
+- [x] Use of [CSS font stacks](http://www.cssfontstack.com) with `@font-face` web font or web safe font with web safe fallback replacements
+- [x] Attention to [line length](https://practicaltypography.com/line-length.html) for small screens (at least 5 words or more per line) and wider screen (at most 15 words or less per line)
+- [x] Attention to [typographic details](https://www.typewolf.com/cheatsheet)
+  - Use of CSS `text-transform: uppercase;` for displaying [all caps](https://practicaltypography.com/all-caps.html) text
+      - For example: `<h1 class="text-uppercase">Display as all caps, but don't type all caps, just sentence case. (Thanks!)</h1>`
+  - Use of [typographic characters](http://htmlarrows.com) for fractions ½ , degrees (fahrenheit) ℉, arrows ⤴, etc.
+  - Use of custom color for default blue hyperlinks states
+      - For example: `a {color: #f90;} a:hover, a:focus {color: #f30;}`
+
+### Layout
+`20 points`
+
+- [ ] Use of a cohesive [color palette](https://htmlcolorcodes.com/color-chart/) for uniting typography, borders, background colors, and imagery
+- [ ] Use of `nav` to navigation to page sections (fragments) `#about`, `#work`, etc.
+  - Also, consider a "Back to Top" or "Back to Menu" link at the bottom of the page
+- [ ] Small screen, mobile first, single-column layout
+- [ ] Use of Bootstrap ([Grid system](https://getbootstrap.com/docs/4.1/layout/grid/)) for responsive layout — small-to-wide-to-wider screens
+
+### Artwork
+`20 points`
+
+- [x] Use of original artwork (photography, illustration, etc.) or sourced artwork from the existing article or found with inclusion of credit byline
+  - Original artwork byline example: `<figcaption><small class="photo-credit">Photo by Jane Doe</small></figcaption>`
+  - Sourced artwork byline example: `<figcaption><a href="https://imageoptim.com/ImageOptim-app.png">https://imageoptim.com/ImageOptim-app.png</a></figcaption>`
+- [x] Save images for the web as a PNG, SVG (or both), or JPG
+  - Save bitmap (raster) images using Photoshop, export `Save for Web (Legacy)…` illustrations as a PNG (`.png`) using the preset `PNG-8 128 Dithered` (less colors) or `PNG-24` (more colors) and photographs as a JPG (`.jpg`) using the preset `JPEG High`
+  - Save vector images, illustration and typography-based artwork, using Illustrator, `Save As…` > `SVG` (`.svg`) format
+    - When using SVG use the `src` (to embed the `.png`) and `srcset` (to embed the `.svg`) attributes for providing fallback and future-friendly image formats
+      - For example: `<img src="img/artwork.png" srcset="img/artwork.svg" alt="A short description of what I should be seeing here.">`
+- [x] Optimization all images using [ImageOptim](https://imageoptim.com/mac) or similar software for [Windows](https://sourceforge.net/projects/nikkhokkho/) and/or [SVGOMG!](https://jakearchibald.github.io/svgomg/) for SVGs
+- [x] Use of the `alt` attribute to provide a [short description](https://axesslab.com/alt-texts/), alternative text, of the visual content displayed in the hero image
+
+### Validate
+`20 points`
+
+- [x] [Validate HTML](https://validator.w3.org) _(no errors; warnings are ok, but try to resolve)_
+  - Use CSS instead of `<center>` or `align="center"` and other [obsolete and deprecated elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Obsolete_and_deprecated_elements) and [attributes](https://css-tricks.com/list-of-depreciated-elements-still-in-widespread-use/)
+- [x] [Validate CSS](http://jigsaw.w3.org/css-validator/) _(no errors; warnings are ok, but try to resolve)_
+  - Only validate `main.css` (exclude bootstrap.css)
+
+### Git
+`10 points`
+
+- [x] Repo should contain only essential files:
+  - `index.html`
+  - `css` (folder containing an external stylesheet)
+    - For example: `main.css`
+  - `img` (folder containing images)
+    - For example: `artwork.png`
+  - `versions` (folder [no spaces] containing tests, experiments, work in progress, etc.)
+    - For example: `redesign-test-1.html`
+  - `comps` (folder containing images (screen-shots) and/or comps used as style references)
+    - For example: `style-idea-1.pdf`
+    - Or include a list of references in the `README.md`
+  - `README.md`
+    - Update this file with a proper heading (title) and paragraph (description)
+    - Markdown [basic](http://daringfireball.net/projects/markdown/basics) and [dingus](http://daringfireball.net/projects/markdown/dingus)
+- [x] Add a [description and url](https://i.imgur.com/CexeWBQ.gif) to your GitHub repo
+  - Example description: _A single serving of…._
+  - Example url: `https://jgagne.github.io/single-serving/`
+
+## Extra Extra
+`10 points`
+
+- [ ] Test color contrast ratio of your webpage meets WCAG guidelines via [Accessible Colors](http://accessible-colors.com) `#useful`
+- [ ] Use of [smooth-scroll](https://github.com/cferdinandi/smooth-scroll) JavaScript, for navigation links, to add smooth page scrolling
